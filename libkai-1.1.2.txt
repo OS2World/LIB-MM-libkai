@@ -1,0 +1,45 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: libkai-1.1.2.zip
+       Short Description: libkai v1.1.2
+        Long Description: K Audio Interface v1.1.2.
+                          DART/UNIAUD implementation library.
+
+v1.1.2: uniaud.dll is present even if Uniaud driver is not loaded,
+        the crash occur in kaiUniaudInit() on a second call time.
+
+v1.1.1: Undefine VERSION macro to avoid a name clash
+
+V1.1.0: Try to improve the compatibility with LIBPATHSTRICT(Thanks to Andy Willis)
+        Support multiple instances
+        Callback is called one more after EOS. Fixed
+        dartGetVolume() returns a volume of both channel. Fixed
+        dartPlay() checks whether instance is inactive before playing
+        kaiInit() check a parameter validity
+
+v1.0.1: Added KAI_VERSION macro
+        Sometimes dead lock occur in dartStop(). Fixed
+        If it takes too long time returning from callback, looping sounds can be
+        generated due to underrun. Fixed
+
+      Proposed directory
+           for placement: /pub/os2/dev/mm
+
+               Your name: KO Myung-Hun
+           Email address: komh@chollian.net
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: (none)
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version:
+ Additional requirements:
+
+                Replaces: (none)
+
+
+
